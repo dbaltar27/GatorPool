@@ -1,0 +1,20 @@
+.list-group{
+    position: relative;
+    left: 10px;
+    border-style: none;
+}
+
+.list-group-item{
+    border-style: none;
+}
+
+.jumbotron-fluid{
+    position: relative;
+    top: -20px;
+}
+
+.profile-container{
+    position: relative;
+    top: -10px;
+    right: -20px;
+}

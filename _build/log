@@ -1,0 +1,4 @@
+# dune runtest
+# OCAMLPARAM: unset
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/_1/544nzhfs6y960q3jthnmp8m80000gn/T/dune571351.output 2> /dev/null
+$ /usr/local/bin/ocamlc.opt -config > /var/folders/_1/544nzhfs6y960q3jthnmp8m80000gn/T/dune7f948a.output
