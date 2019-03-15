@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ProfileComponent } from './profile/profile.component';
+import { RiderProfileComponent } from './rider-profile/rider-profile.component';
 
 const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
+  { path: 'rider-profile', component: RiderProfileComponent},
 ]
 
 
