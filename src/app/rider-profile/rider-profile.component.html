@@ -1,24 +1,30 @@
 <div class="container">
     
   <div class="col-md-6"> 
-      <button class="btn btn default" routerLinkActive="active" routerLink="/profile">Back</button>
+      <button class="btn btn default" routerLinkActive="active" routerLink="/trip-page">Back</button>
       <h1><img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png">  
       Name</h1> 
-      <ul>
-        <li><a href="www.facebook.com/signup">Facebook</a></li>
-        <li>Ratings:</li>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="www.facebook.com/signup">Facebook</a></li>
+        <li class="list-group-item">Ratings:</li>
         <ul>
-          <li>Safe Driver</li>
-          <li>Comfortable Car</li>
-          <li>Good Conversation</li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Safe Driver <span class="badge badge-primary badge-pill">4</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Comfortable Car <span class="badge badge-primary badge-pill">6</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Good Conversation <span class="badge badge-primary badge-pill">1</span>
+          </li>
         </ul>
         
     </ul>  
   </div>
   <div class="col-md-6">
     <h2>Would you like (name) to join your trip?</h2>
-    <button class=" btn btn-success">Accept</button>
-    <button class="btn btn-danger">Deny</button>
+    <button class="add-deny" class=" btn btn-success">Accept</button>
+    <button class="add-deny" class="btn btn-danger">Deny</button>
     <div class="alert alert-success">
         <strong>Success!</strong> (Name) is now a part of your trip.
     </div>
