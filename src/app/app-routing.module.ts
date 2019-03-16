@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ProfileComponent } from './profile/profile.component';
 import { RiderProfileComponent } from './rider-profile/rider-profile.component';
+import { TripPageComponent } from './trip-page/trip-page.component';
 
 const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'rider-profile', component: RiderProfileComponent},
+  { path: 'trip-page', component: TripPageComponent},
 ]
 
 
