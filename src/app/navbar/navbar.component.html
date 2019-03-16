@@ -1,14 +1,15 @@
-<nav class="navbar navbar-inverse">
+<nav *ngIf="router.url != '/'" class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Gator Pool</a>
+        <a class="navbar-brand" href="#">GatorPool</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">New Trip</a></li>
+        <li><a class="nav-item nav-link" routerLinkActive="active" routerLink="/new-trip">New Trip</a></li>
         <li><a class="nav-item nav-link" routerLinkActive="active" routerLink="/profile">Profile</a></li>
+        <li><a class="nav-item nav-link" routerLinkActive="active" routerLink="/">Logout</a></li>
       </ul>
     </div>
-  </nav>
+</nav>
     
 
   
