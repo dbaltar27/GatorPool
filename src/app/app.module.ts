@@ -5,6 +5,12 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RiderProfileComponent } from './rider-profile/rider-profile.component';
+import { TripPageComponent } from './trip-page/trip-page.component';
+import { RiderProfileAcceptedComponent } from './rider-profile-accepted/rider-profile-accepted.component';
+import { ViewDriversComponent } from './view-drivers/view-drivers.component';
+import { ViewPostComponent } from './view-post/view-post.component';
+import { ConfirmedTripComponent } from './confirmed-trip/confirmed-trip.component';
 import { HomeComponent } from './home/home.component';
 import { TripFormComponent } from './trip-form/trip-form.component';
 import { DriverFormComponent } from './driver-form/driver-form.component';
@@ -18,6 +24,12 @@ import { TripMatchComponent } from './trip-match/trip-match.component';
     AppComponent,
     ProfileComponent,
     NavbarComponent,
+    RiderProfileComponent,
+    TripPageComponent,
+    RiderProfileAcceptedComponent,
+    ViewDriversComponent,
+    ViewPostComponent,
+    ConfirmedTripComponent
     HomeComponent,
     TripFormComponent,
     DriverFormComponent,
