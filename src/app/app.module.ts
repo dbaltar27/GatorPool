@@ -11,6 +11,10 @@ import { RiderProfileAcceptedComponent } from './rider-profile-accepted/rider-pr
 import { ViewDriversComponent } from './view-drivers/view-drivers.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { ConfirmedTripComponent } from './confirmed-trip/confirmed-trip.component';
+import { HomeComponent } from './home/home.component';
+import { TripFormComponent } from './trip-form/trip-form.component';
+import { DriverFormComponent } from './driver-form/driver-form.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { ConfirmedTripComponent } from './confirmed-trip/confirmed-trip.componen
     ViewDriversComponent,
     ViewPostComponent,
     ConfirmedTripComponent
+    HomeComponent,
+    TripFormComponent,
+    DriverFormComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
