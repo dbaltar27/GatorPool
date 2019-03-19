@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { TripFormComponent } from './trip-form/trip-form.component';
 import { DriverFormComponent } from './driver-form/driver-form.component';
 import { SignupComponent } from './signup/signup.component';
+import { NoMatchingTripsComponent } from './no-matching-trips/no-matching-trips.component';
+import { TripDetailsComponent } from './trip-details/trip-details.component';
+import { TripMatchComponent } from './trip-match/trip-match.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SignupComponent } from './signup/signup.component';
     HomeComponent,
     TripFormComponent,
     DriverFormComponent,
-    SignupComponent
+    SignupComponent,
+    NoMatchingTripsComponent,
+    TripDetailsComponent,
+    TripMatchComponent
   ],
   imports: [
     BrowserModule,
