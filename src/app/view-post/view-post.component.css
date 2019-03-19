@@ -1,17 +1,13 @@
 .jumbotron-fluid{
     position: relative;
     top: -20px;
-}
-
-#profile-picture{
+  }
+  
+  #profile-picture{
     width:90px;
     height:90px;
-}
-
-li {
+  }
+  
+  li {
     font-size:20px;
-}
-
-.alert-msg {
-    display:none;
-}
+  }

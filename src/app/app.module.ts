@@ -8,6 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { RiderProfileComponent } from './rider-profile/rider-profile.component';
 import { TripPageComponent } from './trip-page/trip-page.component';
 import { RiderProfileAcceptedComponent } from './rider-profile-accepted/rider-profile-accepted.component';
+import { ViewDriversComponent } from './view-drivers/view-drivers.component';
+import { ViewPostComponent } from './view-post/view-post.component';
+import { ConfirmedTripComponent } from './confirmed-trip/confirmed-trip.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { RiderProfileAcceptedComponent } from './rider-profile-accepted/rider-pr
     NavbarComponent,
     RiderProfileComponent,
     TripPageComponent,
-    RiderProfileAcceptedComponent
+    RiderProfileAcceptedComponent,
+    ViewDriversComponent,
+    ViewPostComponent,
+    ConfirmedTripComponent
   ],
   imports: [
     BrowserModule,

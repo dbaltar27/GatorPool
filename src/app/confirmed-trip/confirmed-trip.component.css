@@ -1,0 +1,29 @@
+.jumbotron-fluid{
+    position: relative;
+    top: -20px;
+  }
+
+  #profile-picture{
+    width:90px;
+    height:90px;
+  }
+
+  li {
+    font-size:20px;
+  }
+
+  .confirmed{
+    background-color: #dff0d8;
+  }
+
+  a>img {
+    height: 10%;
+    width: 10%;
+    border: 1px solid grey;
+    border-radius: 25%;
+    margin-right: 2%;
+  }
+
+  a>img:hover{
+    background-color:#ddd;
+  }
