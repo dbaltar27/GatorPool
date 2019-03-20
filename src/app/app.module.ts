@@ -26,7 +26,7 @@ import { SignupComponent } from './signup/signup.component';
     RiderProfileAcceptedComponent,
     ViewDriversComponent,
     ViewPostComponent,
-    ConfirmedTripComponent
+    ConfirmedTripComponent,
     HomeComponent,
     TripFormComponent,
     DriverFormComponent,

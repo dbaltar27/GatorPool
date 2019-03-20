@@ -11,9 +11,9 @@ export class TripFormComponent implements OnInit {
 
   ngOnInit() {
 
-    (<any>$('.date') ).datepicker({
-      autoclose: true,
-    });
+    //(<any>$('.date') ).datepicker({
+      //autoclose: true,
+    //});
   }
 
 }
