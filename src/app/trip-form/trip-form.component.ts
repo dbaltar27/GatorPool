@@ -36,6 +36,15 @@ export class TripFormComponent implements OnInit {
       autoclose: true,
     });
 
+    /*
+    $('input').on('click keyup select blur',function () {
+      if ( $('#dest_city').val() && $('#dest_state').val() && $('#tripDate').val()) {
+        $("#rider_btn"). removeAttr("disabled");
+        $("#driver_btn"). removeAttr("disabled");
+      } 
+    });
+    */
+
   }
 
 }

@@ -8,13 +8,8 @@
     <div class="form-group top">
         <label for="name" class="col-md-2">Departure Date: </label>
         <div class="col-md-3">
-<<<<<<< HEAD
-            <div id='date' class="input-group date" data-provide="datepicker">
-                <input type="text" class="form-control" placeholder="MM/DD/YYYY">
-=======
             <div id="date" class="input-group date" data-provide="datepicker">
                 <input #user_date type="text" class="form-control" placeholder="MM/DD/YYYY" id="tripDate">
->>>>>>> 134080cc03a167c5283a1d5221fa3b36508f7b3c
                 <div class="input-group-addon">
                     <span class="glyphicon glyphicon-th"></span>
                 </div>
@@ -26,28 +21,18 @@
     <div class="form-group top">
         <label for="name" class="col-md-2">Destination: </label>
         <div class="col-md-3">
-<<<<<<< HEAD
-            <input type="text" class="form-control" name='city' id="city" placeholder="City">
-        </div>
-        <div class="col-md-1">
-            <input type="text" class="form-control" id="state" placeholder="State">
-=======
+
             <input #dest_city type="text" class="form-control" name="destination" id="dest_city" placeholder="City"><p>{{value}}</p>
         </div>
         <div class="col-md-1">
             <input #dest_state type="text" class="form-control" name="destination" id="dest_state" placeholder="FL">
->>>>>>> 134080cc03a167c5283a1d5221fa3b36508f7b3c
         </div>
     </div>
   </div>
   <h2>I am a:</h2>
   <div class="row">
     <div class="col-md-2 ">
-<<<<<<< HEAD
-        <a routerLinkActive="active" routerLink="/new-driver" id="driver-btn"><div class="panel panel-default ">
-=======
         <a (click)="onClickMe(dest_city.value, dest_state.value, user_date.value)" routerLinkActive="active" routerLink="/new-driver" id="driver_btn"><div class="panel panel-default ">
->>>>>>> 134080cc03a167c5283a1d5221fa3b36508f7b3c
             <div class="panel-body home-panel text-center">
               <h2 class="h2-top">Driver</h2>
               <i class="fa fa-car" aria-hidden="true"></i>
@@ -55,7 +40,7 @@
         </div></a>
     </div>
     <div class="col-md-2 ">
-        <a (click)="onClickMe(dest_city.value, dest_state.value, user_date.value)" routerLinkActive="active" routerLink="/trip-match"><div class="panel panel-default ">
+        <a (click)="onClickMe(dest_city.value, dest_state.value, user_date.value)" routerLinkActive="active" routerLink="/trip-match" id='rider_btn'><div class="panel panel-default ">
             <div class="panel-body home-panel text-center">
               <h2 class="h2-top">Rider</h2>
               <i class="fa fa-user" aria-hidden="true"></i>

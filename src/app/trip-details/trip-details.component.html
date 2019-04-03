@@ -13,7 +13,7 @@
   <div class="container">  
     <div class="col-md-6">
       <h2><b>Driver</b></h2> 
-      <h2><img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png">  
+      <h2 id='name'><img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png">  
       Elmo</h2> 
       <ul class="list-group">
         <li class="list-group-item"><a href="www.facebook.com/signup">Facebook</a></li>
@@ -41,12 +41,12 @@
       <h2><b>Details</b></h2> 
       <div class="panel panel-default">
         <div class="panel-body">
-         <h4>Destination: Orlando</h4>
+         <h4>Destination: <span class='city'>Orlando</span></h4>
           <h4>Departure: Gainesville</h4>
-        <h4>Departure Time: 3:30 PM</h4>
+        <h4>Departure Time: <span id='time'>3:30 PM</span></h4>
         <h4>Number of available seats: 2</h4>
         <h4>Status: Available</h4>
-          <h4>Price: $25</h4>
+          <h4>Price: <span id='price'>$25</span></h4>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@
           <h4 class="modal-title">RSVP Confirmed!</h4>
         </div>
         <div class="modal-body">
-          <p>Destination: Orlando<br>Date: 3/20/2019</p>
+          <p>Destination: <span class='city'>Orlando</span><br>Date: <span id='date'>3/20/2019</span></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

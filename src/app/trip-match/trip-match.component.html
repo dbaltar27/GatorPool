@@ -16,7 +16,7 @@
   
 <div class="container">
   <h2>Matching Rides</h2>
-    <h4>From: Gainseville To: <span id='dest_city'>Orlando</span> On: <span id='trip_date'>3/20/2019</span></h4>
+    <h4>From: Gainseville To: <span class='dest_city'>Orlando</span> On: <span class='trip_date'>3/20/2019</span></h4>
                                                                                   
   <div class="table-responsive">          
   <table class="table">
@@ -36,11 +36,11 @@
         <td>
             <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
         </td>
-        <td>Anna</td>
-        <td>3:00 PM</td>
-        <td>$20</td>
+        <td class='name'>Anna</td>
+        <td class='time'>3:00 PM</td>
+        <td class='price'>$20</td>
         <td>
-            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>  
+            <button type="button" class="btn btn-info details" routerLinkActive="active" routerLink="/trip-details">Details</button>  
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -52,11 +52,11 @@
         <td>
             <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
         </td>
-        <td>Sid</td>
-        <td>2:00 PM</td>
-        <td>$30</td>
+        <td class='name'>Sid</td>
+        <td class='time'>2:00 PM</td>
+        <td class='price'>$30</td>
         <td>
-            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>  
+            <button type="button" class="btn btn-info details" routerLinkActive="active" routerLink="/trip-details">Details</button>  
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -68,27 +68,27 @@
         <td>
             <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
         </td>
-        <td>Elmo</td>
-        <td>3:30 PM</td>
-        <td>$25</td>
+        <td class='name'>Elmo</td>
+        <td class='time'>3:30 PM</td>
+        <td class='price'>$25</td>
         <td>
-            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>
+            <button type="button" class="btn btn-info details" routerLinkActive="active" routerLink="/trip-details">Details</button>
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
         </td>
       </tr>
         
-     <!--Person4-->
+     <!-- Person4 -->
       <tr>
         <td>
             <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
         </td>
-        <td>Roger</td>
-        <td>12:00 PM</td>
-        <td>$20</td>
+        <td class='name'>Roger</td>
+        <td class='time'>12:00 PM</td>
+        <td class='price'>$20</td>
         <td>
-            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>  
+            <button type="button" class="btn btn-info details" routerLinkActive="active" routerLink="/trip-details">Details</button>  
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -122,7 +122,7 @@
           <h4 class="modal-title">RSVP Confirmed!</h4>
         </div>
         <div class="modal-body">
-          <p>Destination: XX<br>Date: XX</p>
+          <p>Destination: <span class='dest_city'></span><br>Date: <span class='trip_date'></span></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
