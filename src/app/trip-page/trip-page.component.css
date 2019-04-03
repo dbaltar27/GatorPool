@@ -1,0 +1,35 @@
+a>img {
+	height: 10%;
+	width: 10%;
+	border: 1px solid grey;
+	border-radius: 25%;
+	margin-right: 2%;
+}
+
+a>img:hover{
+	background-color:#ddd;
+}
+
+a.back{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px;
+	border: 1px solid black;
+	width: 90%;
+}
+
+a.back:hover{
+	background-color: #ddd;
+}
+
+button.btn-success{
+	margin-right: 2%;
+}
+.buttons{
+	display: inline;
+	margin-left: 10%;
+}
+
+.glyphicon glyphicon-alert {
+    size: 40px;
+}
