@@ -24,7 +24,7 @@
             <input #dest_city type="text" class="form-control" name="destination" id="dest_city" placeholder="City"><p>{{value}}</p>
         </div>
         <div class="col-md-1">
-            <input #dest_state type="text" class="form-control" name="destination" id="dest_state" placeholder="State">
+            <input #dest_state type="text" class="form-control" name="destination" id="dest_state" placeholder="FL">
         </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         </div></a>
     </div>
     <div class="col-md-2 ">
-        <a routerLinkActive="active" routerLink="/trip-match"><div class="panel panel-default ">
+        <a (click)="onClickMe(dest_city.value, dest_state.value, user_date.value)" routerLinkActive="active" routerLink="/trip-match"><div class="panel panel-default ">
             <div class="panel-body home-panel text-center">
               <h2 class="h2-top">Rider</h2>
               <i class="fa fa-user" aria-hidden="true"></i>

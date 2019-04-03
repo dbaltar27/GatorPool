@@ -10,16 +10,18 @@ export class TripFormComponent implements OnInit {
 	
 	// value='';
 	onClickMe(city: string, state: string, date: string){
-		// this.value = value;
+    // this.value = value;
+    
 		console.log("city " + city);
 		console.log("state " + state);
-		console.log("date" + date);
+		console.log("date " + date);
 		var drive = {
 			dest_city: city,
 			dest_state: state,
 			ride_date: date
 		};
 
+    console.log(drive);
 
 		sessionStorage.setItem("drive", JSON.stringify(drive));
 	}
@@ -29,29 +31,9 @@ export class TripFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
-    //(<any>$('.date') ).datepicker({
-      //autoclose: true,
-    //});
-
-    // $(document).ready(function(){
-
-    window.onload = function(){
-    	$("#driver_btn").click(function(){
-
-	    	var x = document.getElementById("tester");
-
-	    	console.log(x);
-
-
-
-	    	// console.log("city: " + $("#dest_city").val());
-
-	    });
-    // });
-	
-   }
-	    
+    (<any>$('.date') ).datepicker({
+      autoclose: true,
+    });
 
   }
 
