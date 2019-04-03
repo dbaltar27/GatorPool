@@ -10,6 +10,7 @@ export class TripFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+<<<<<<< HEAD
     
     (<any>$('.date') ).datepicker({
       autoclose: true,
@@ -42,6 +43,12 @@ export class TripFormComponent implements OnInit {
   });
     
 
+=======
+
+    //(<any>$('.date') ).datepicker({
+      //autoclose: true,
+    //});
+>>>>>>> 7a1df019379a97c8ee7c8db4c7d313a8e2ab66b2
   }
 
 }

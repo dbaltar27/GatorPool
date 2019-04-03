@@ -16,6 +16,8 @@ import { NoMatchingTripsComponent } from './no-matching-trips/no-matching-trips.
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { TripMatchComponent } from './trip-match/trip-match.component';
 import { SignupComponent } from './signup/signup.component';
+import { RatingFormComponent } from './rating-form/rating-form.component'
+import { DetailsPageComponent } from './details-page/details-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,8 +34,10 @@ const routes: Routes = [
   { path: 'trip-match', component: TripMatchComponent },
   { path: 'trip-details', component: TripDetailsComponent },
   { path: 'no-matching-trips', component: NoMatchingTripsComponent },
+  { path: 'rating', component: RatingFormComponent },
+  { path: 'details', component: DetailsPageComponent },
+  { path: 'trip-form', component: TripFormComponent}
 ]
-
 
 @NgModule({
   imports: [
