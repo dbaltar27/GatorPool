@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"> 
+        <button class="back btn" routerLinkActive="active" routerLink="/profile" ><span class="glyphicon glyphicon-arrow-left"></span></button>
+      </div>
+      <div class="col-md-10">
+        <h3 style="text-align: center">  </h3>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  
+<div class="container">
+  <h2>Matching Rides</h2>
+    <h4>From: Gainseville To: Orlando On: 3/20/2019</h4>
+                                                                                  
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Driver</th>
+        <th>Name</th>
+        <th>Departure time</th>
+        <th>Price</th>
+        <th>Details</th>
+        <th>RSVP</th>
+      </tr>
+    </thead>
+    <tbody>
+    <!--Person1-->
+      <tr>
+        <td>
+            <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
+        </td>
+        <td>Anna</td>
+        <td>3:00 PM</td>
+        <td>20$</td>
+        <td>
+            <button type="button" class="btn btn-info">Details</button>  
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
+        </td>
+      </tr>
+    
+     <!--Person2-->
+      <tr>
+        <td>
+            <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
+        </td>
+        <td>Sid</td>
+        <td>2:00 PM</td>
+        <td>30$</td>
+        <td>
+            <button type="button" class="btn btn-info" >Details</button>  
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
+        </td>
+      </tr>
+        
+     <!--Person3-->
+      <tr>
+        <td>
+            <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
+        </td>
+        <td>Elmo</td>
+        <td>3:30 PM</td>
+        <td>25$</td>
+        <td>
+            <button type="button" class="btn btn-info">Details</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
+        </td>
+      </tr>
+        
+     <!--Person4-->
+      <tr>
+        <td>
+            <img id="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"> 
+        </td>
+        <td>Roger</td>
+        <td>12:00 PM</td>
+        <td>20$</td>
+        <td>
+            <button type="button" class="btn btn-info" >Details</button>  
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
+        </td>
+      </tr>
+        
+    </tbody>
+  </table>
+  </div>
+</div>
+    
+
+<div class="col-md-3">
+   
+</div>      
+<div class="col-md-4">
+    <h4>Want to get notified if more matching drivers become available?</h4> 
+</div>    
+<div class="col-md-3">
+    <button type="button" class="btn btn-success btn-lg " data-toggle="modal" data-target="#myModal">Notify me!</button>
+</div>
+    
+    
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">RSVP Confirmed!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Destination: XX<br>Date: XX</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</html>
+
+<style>
+  .jumbotron-fluid{
+    position: relative;
+    top: -20px;
+  }
+
+  #profile-picture{
+    width:90px;
+    height:90px;
+  }
+
+  li {
+    font-size:20px;
+  }
+
+</style>
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>

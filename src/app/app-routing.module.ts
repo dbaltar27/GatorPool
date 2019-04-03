@@ -12,6 +12,9 @@ import { ConfirmedTripComponent } from './confirmed-trip/confirmed-trip.componen
 import { HomeComponent } from './home/home.component';
 import { TripFormComponent } from './trip-form/trip-form.component';
 import { DriverFormComponent } from './driver-form/driver-form.component';
+import { NoMatchingTripsComponent } from './no-matching-trips/no-matching-trips.component';
+import { TripDetailsComponent } from './trip-details/trip-details.component';
+import { TripMatchComponent } from './trip-match/trip-match.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -26,6 +29,9 @@ const routes: Routes = [
   { path: 'new-trip', component: TripFormComponent },
   { path: 'new-driver', component: DriverFormComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'trip-match', component: TripMatchComponent },
+  { path: 'trip-details', component: TripDetailsComponent },
+  { path: 'no-matching-trips', component: NoMatchingTripsComponent },
 ]
 
 
