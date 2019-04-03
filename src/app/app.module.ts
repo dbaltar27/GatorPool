@@ -18,6 +18,8 @@ import { SignupComponent } from './signup/signup.component';
 import { NoMatchingTripsComponent } from './no-matching-trips/no-matching-trips.component';
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { TripMatchComponent } from './trip-match/trip-match.component';
+import { RatingFormComponent } from './rating-form/rating-form.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { TripMatchComponent } from './trip-match/trip-match.component';
     SignupComponent,
     NoMatchingTripsComponent,
     TripDetailsComponent,
-    TripMatchComponent
+    TripMatchComponent,
+    RatingFormComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
