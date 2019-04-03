@@ -35,7 +35,8 @@ const routes: Routes = [
   { path: 'trip-details', component: TripDetailsComponent },
   { path: 'no-matching-trips', component: NoMatchingTripsComponent },
   { path: 'rating', component: RatingFormComponent },
-  { path: 'details', component: DetailsPageComponent }
+  { path: 'details', component: DetailsPageComponent },
+  { path: 'trip-form', component: TripFormComponent}
 ]
 
 @NgModule({
