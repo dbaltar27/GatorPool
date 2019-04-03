@@ -1,12 +1,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
 <div class='container'>
   <h2>When is your trip?</h2>
+  <!-- <input #box (keyup)="onKey(box.value)">
+  <p>{{values}}</p> -->
+
   <div class="row">
     <div class="form-group top">
         <label for="name" class="col-md-2">Departure Date: </label>
         <div class="col-md-3">
             <div id="date" class="input-group date" data-provide="datepicker">
-                <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                <input #user_date type="text" class="form-control" placeholder="MM/DD/YYYY" id="tripDate">
                 <div class="input-group-addon">
                     <span class="glyphicon glyphicon-th"></span>
                 </div>
@@ -18,17 +21,17 @@
     <div class="form-group top">
         <label for="name" class="col-md-2">Destination: </label>
         <div class="col-md-3">
-            <input type="text" class="form-control" name="destination" id="dest_state" placeholder="City">
+            <input #dest_city type="text" class="form-control" name="destination" id="dest_city" placeholder="City"><p>{{value}}</p>
         </div>
         <div class="col-md-1">
-            <input type="text" class="form-control" name="destination" id="dest_state" placeholder="State">
+            <input #dest_state type="text" class="form-control" name="destination" id="dest_state" placeholder="State">
         </div>
     </div>
   </div>
   <h2>I am a:</h2>
   <div class="row">
     <div class="col-md-2 ">
-        <a routerLinkActive="active" routerLink="/new-driver"><div class="panel panel-default ">
+        <a (click)="onClickMe(dest_city.value, dest_state.value, user_date.value)" routerLinkActive="active" routerLink="/new-driver" id="driver_btn"><div class="panel panel-default ">
             <div class="panel-body home-panel text-center">
               <h2 class="h2-top">Driver</h2>
               <i class="fa fa-car" aria-hidden="true"></i>
