@@ -21,7 +21,7 @@ export class TripFormComponent implements OnInit {
 
       $('input').on('keyup blur',function () {
         city = <string>$('#city').val();
-        date = <string>$('.date').val();
+        date = <any>$('.date').val();
         state = <string>$('#state').val();
       
       });
