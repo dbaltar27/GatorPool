@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+
 
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-1"> 
-        <button class="back btn" routerLinkActive="active" routerLink="/profile" ><span class="glyphicon glyphicon-arrow-left"></span></button>
+        <button class="back btn" routerLinkActive="active" routerLink="/trip-form" ><span class="glyphicon glyphicon-arrow-left"></span></button>
       </div>
       <div class="col-md-10">
         <h3 style="text-align: center">  </h3>
@@ -41,9 +36,9 @@
         </td>
         <td>Anna</td>
         <td>3:00 PM</td>
-        <td>20$</td>
+        <td>$20</td>
         <td>
-            <button type="button" class="btn btn-info">Details</button>  
+            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>  
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -57,9 +52,9 @@
         </td>
         <td>Sid</td>
         <td>2:00 PM</td>
-        <td>30$</td>
+        <td>$30</td>
         <td>
-            <button type="button" class="btn btn-info" >Details</button>  
+            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>  
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -73,9 +68,9 @@
         </td>
         <td>Elmo</td>
         <td>3:30 PM</td>
-        <td>25$</td>
+        <td>$25</td>
         <td>
-            <button type="button" class="btn btn-info">Details</button>
+            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -89,9 +84,9 @@
         </td>
         <td>Roger</td>
         <td>12:00 PM</td>
-        <td>20$</td>
+        <td>$20</td>
         <td>
-            <button type="button" class="btn btn-info" >Details</button>  
+            <button type="button" class="btn btn-info" routerLinkActive="active" routerLink="/trip-details">Details</button>  
         </td>
         <td>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -134,30 +129,4 @@
       
     </div>
   </div>
-</html>
 
-<style>
-  .jumbotron-fluid{
-    position: relative;
-    top: -20px;
-  }
-
-  #profile-picture{
-    width:90px;
-    height:90px;
-  }
-
-  li {
-    font-size:20px;
-  }
-
-</style>
-
- <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
