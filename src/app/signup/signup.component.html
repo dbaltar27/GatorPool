@@ -17,7 +17,7 @@
           <div class="d-flex flex-column">
               <label class="control-label">UFL Email:</label>
               <div class="input-group">
-                <input type="text" class="form-control" aria-describedby="basic-addon2">
+                <input id='email' type="text" class="form-control" aria-describedby="basic-addon2">
                 <span class="input-group-addon" id="basic-addon2">@ufl.edu</span>
               </div>
           </div>
@@ -27,13 +27,13 @@
       <div class="form-group col-md-4">
           <div class="d-flex flex-column">
               <label class="control-label">Phone Number:</label>
-              <input type="text" class="form-control" id="phone" placeholder="###-###-####">
+              <input id='phone' type="text" class="form-control" id="phone" placeholder="012-345-6789">
           </div>
       </div>
     </div>  
     <div class="row">
         <div class="btn top">
-          <a routerLinkActive="active" routerLink="/profile"><button type="button" class="btn btn-primary">Sign Up</button></a>
+          <a routerLinkActive="active" routerLink="/profile"><button disabled id="signup" type="button" class="btn btn-primary">Sign Up</button></a>
         </div>
       </div>   
   </div>

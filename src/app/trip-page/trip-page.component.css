@@ -33,3 +33,7 @@ button.btn-success{
 .glyphicon glyphicon-alert {
     size: 40px;
 }
+
+.btn-warning {
+	margin-bottom: 20px;
+}

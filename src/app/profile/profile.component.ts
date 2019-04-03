@@ -15,6 +15,9 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     //this.data.currentMessage.subscribe(message => this.message = message)
+
+    $('#profile-name').text(sessionStorage.getItem("full-name"));
+
   }
 
 }
