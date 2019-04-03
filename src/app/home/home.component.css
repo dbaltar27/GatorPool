@@ -13,3 +13,8 @@ a {
 .top {
     margin-top: 10px;
 }
+
+#alert {
+    width: 400px;
+    
+}

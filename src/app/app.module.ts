@@ -29,7 +29,7 @@ import { TripMatchComponent } from './trip-match/trip-match.component';
     RiderProfileAcceptedComponent,
     ViewDriversComponent,
     ViewPostComponent,
-    ConfirmedTripComponent
+    ConfirmedTripComponent,
     HomeComponent,
     TripFormComponent,
     DriverFormComponent,
