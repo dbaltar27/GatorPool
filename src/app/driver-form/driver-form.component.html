@@ -4,22 +4,30 @@
     <div class="form-group top">
         <label for="name" class="col-md-2">Departure Time: </label>
         <div class="col-md-1">
-            <input type="text" class="form-control" name="time_hr" id="time_hr" placeholder="Hour">
+            <input #hour type="text" class="form-control" name="time_hr" id="time_hr" placeholder="Hour">
         </div>
         <div class="col-md-1">
-            <input type="text" class="form-control" name="time_min" id="time_min" placeholder="Minute">
+            <input #minute type="text" class="form-control" name="time_min" id="time_min" placeholder="Minute">
         </div>
-        <div class="btn-group" role="group" aria-label="...">
-          <button type="button" class="btn btn-default">AM</button>
-          <button type="button" class="btn btn-default">PM</button>
+        <!-- <div class="btn-group" role="group" aria-label="..."> -->
+        <div class="form-group">
+          <div class = "radio-inline">
+            <label><input #am (change)="funAM()" type="radio" name="am_pm" value="am">AM</label>
+          </div>
+          <div class = "radio-inline">
+            <label><input #pm (change)="funPM()" type="radio" name="am_pm" value="pm">PM</label>
+          </div>
+          <!-- <button type="button" class="btn btn-default">AM</button>
+          <button type="button" class="btn btn-default">PM</button> -->
         </div>
+        <!-- </div> -->
     </div>
   </div>
   <div class="row">
       <div class="form-group top">
           <label for="name" class="col-md-2">Seats Available: </label>
           <div class="col-md-1">
-              <input type="text" class="form-control" name="seats" id="seats" placeholder="">
+              <input #seats type="text" class="form-control" name="seats" id="seats" placeholder="">
           </div>
       </div>
     </div>
@@ -33,7 +41,7 @@
     </div>
     <div class="row">
       <div class="btn top">
-        <a routerLinkActive="active" routerLink="/profile"><button type="button" class="btn btn-lg btn-primary">Post My Drive</button></a>
+        <a (click)="onClickMe(hour.value, minute.value, seats.value)" routerLinkActive="active" routerLink="/profile"><button type="button" class="btn btn-lg btn-primary">Post My Drive</button></a>
       </div>
     </div>    
 </div>
