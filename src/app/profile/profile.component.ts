@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -7,32 +7,16 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-	onClickMe(){
-		console.log("blah");
-	}
-
-  constructor(private elementRef: ElementRef) { }
-
-  ngAfterViewInit(){
-  	this.elementRef.nativeElement.querySelector('my-element').addEventListener('click', this.onClick.bind(this));
-  }
-
-  onClick(event){
-  	console.log();
-  }
+  constructor() { }
 
   ngOnInit() {
-  	console.log("getting drive");
   	var sessionDrive = JSON.parse(sessionStorage.getItem("drive"));
   	
 
   	if(sessionDrive){
-  		console.log(sessionDrive);
-  		$('#driving-table tr:last').after('<tr><td>'
-  			+sessionDrive.ride_date+'</td><td>Gainesville</td><td>'
-  			+sessionDrive.dest_city+'</td><td>2/'+sessionDrive.seats
-  			+'</td><td><button (click)="onClickMe()" class="btn btn-default" routerLinkActive="active" routerLink="/trip-page">View</button></td></tr>');
-  		
+  		document.getElementById("target-date").innerHTML = sessionDrive.ride_date;
+  		document.getElementById("target-dest").innerHTML = sessionDrive.dest_city;
+  		document.getElementById("target-seat").innerHTML = "2/"+sessionDrive.seats;		
   	}
   	else{
   		console.log("no session storage found");
