@@ -3,87 +3,91 @@
   			<button class="back btn" routerLinkActive="active" routerLink="/profile" ><span class="glyphicon glyphicon-arrow-left"></span></button>
   		</div>
   <div class="page-header">
-    <h1>Your Trip to <b>Miami</b> on <b>February 21, 2019</b></h1>      
+    <h1>Your Trip to <b>{{dest_city}}</b> on <b>{{trip_date}}</b></h1>      
   </div>
-  <h2>Driver</h2>
+  <h2>{{trip_driver}}</h2>
+
   <ul>
     <li>Driving: 
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
+        <mat-slider
+        class = "tp-margin"
+        [thumbLabel] = "thumbLabel"     
+        [vertical] = "vertical">
+       </mat-slider>
     </li>
     <li>Politeness:
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>  
+        <mat-slider
+        class = "tp-margin"
+        [thumbLabel] = "thumbLabel"     
+        [vertical] = "vertical">
+       </mat-slider>
     </li>
     <li>Punctuality:
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>  
+        <mat-slider
+        class = "tp-margin"
+        [thumbLabel] = "thumbLabel"     
+        [vertical] = "vertical">
+       </mat-slider>
     </li>
     <li>Cleanliness: 
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
+        <mat-slider
+        class = "tp-margin"
+        [thumbLabel] = "thumbLabel"     
+        [vertical] = "vertical">
+       </mat-slider>
     </li>
   </ul> 
 
-  <h2>Rider 1</h2>
+  <h2>{{other_rider_1}}</h2>
   <ul>
     <li>Politeness:
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>  
+        <mat-slider
+        class = "tp-margin"
+        [thumbLabel] = "thumbLabel"     
+        [vertical] = "vertical">
+       </mat-slider>
       </li>
       <li>Punctuality:
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>  
+          <mat-slider
+          class = "tp-margin"
+          [thumbLabel] = "thumbLabel"     
+          [vertical] = "vertical">
+         </mat-slider>
       </li>
       <li>Cleanliness: 
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
+          <mat-slider
+          class = "tp-margin"
+          [thumbLabel] = "thumbLabel"     
+          [vertical] = "vertical">
+         </mat-slider>
       </li>
   </ul> 
 
-  <h2>Rider 2</h2>
+  <h2>{{other_rider_2}}</h2>
   <ul>
     <li>Politeness:
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>  
+        <mat-slider
+        class = "tp-margin"
+        >
+       </mat-slider>
       </li>
       <li>Punctuality:
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>  
+          <mat-slider
+          class = "tp-margin"
+          [thumbLabel] = "thumbLabel"     
+          [vertical] = "vertical">
+         </mat-slider>
       </li>
       <li>Cleanliness: 
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
+          <mat-slider
+          class = "tp-margin"
+          [thumbLabel] = "thumbLabel"     
+          [vertical] = "vertical">
+         </mat-slider>
       </li>
   </ul> 
+  <button class="btn btn-default" routerLinkActive="active" routerLink="/profile">Submit</button>
+</div>
+<div class="footer">
+
 </div>

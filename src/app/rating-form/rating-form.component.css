@@ -1,0 +1,19 @@
+.tp-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 10px;
+ }
+ .tp-margin {
+    margin: 7px;
+ }
+ 
+ .mat-slider-horizontal {
+    width: 150px;
+ }
+
+ .footer {
+    height: 60px;
+ }
+ 
+ 
