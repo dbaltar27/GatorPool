@@ -14,7 +14,7 @@ export class TripDetailsComponent implements OnInit {
     $( document ).ready(function() {
     
  
-      var drive = JSON.parse(sessionStorage.getItem('drive'));
+      var drive = JSON.parse(sessionStorage.getItem('ride'));
       //console.log(drive);
 
       var details = JSON.parse(sessionStorage.getItem('details'));

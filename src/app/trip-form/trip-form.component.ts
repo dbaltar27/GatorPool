@@ -9,7 +9,7 @@ export class TripFormComponent implements OnInit {
 
 	
 	// value='';
-	onClickMe(city: string, state: string, date: string){
+	onClickDrive(city: string, state: string, date: string){
     // this.value = value;
     
 		console.log("city " + city);
@@ -24,6 +24,23 @@ export class TripFormComponent implements OnInit {
     console.log(drive);
 
 		sessionStorage.setItem("drive", JSON.stringify(drive));
+  }
+  
+  onClickRide(city: string, state: string, date: string){
+    // this.value = value;
+    
+		console.log("city " + city);
+		console.log("state " + state);
+		console.log("date " + date);
+		var ride = {
+			dest_city: city,
+			dest_state: state,
+			ride_date: date
+		};
+
+    
+
+		sessionStorage.setItem("ride", JSON.stringify(ride));
 	}
 
 	

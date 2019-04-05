@@ -30,7 +30,7 @@ export class TripMatchComponent implements OnInit {
 
   ngOnInit(this) {
 
-    var drive = JSON.parse(sessionStorage.getItem('drive'));
+    var drive = JSON.parse(sessionStorage.getItem('ride'));
     //console.log(drive);
 
     $('.dest_city').text(drive.dest_city);
