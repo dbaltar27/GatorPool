@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripPageComponent implements OnInit {
 
- 
-  /* place = sessionStorage.getItem("drive-city");
-  time = sessionStorage.getItem("drive-date");
-  seats = sessionStorage.getItem("drive-seats"); */
+  public isVisible = false;
+
   constructor() { }
   
   ngOnInit() {
@@ -28,5 +26,11 @@ export class TripPageComponent implements OnInit {
   	}
    
   }
+
+  ShowHide(){
+    this.isVisible = true;
+  }
+
+
 
 }
