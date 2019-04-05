@@ -4,7 +4,7 @@
   			<button class="back btn" routerLinkActive="active" routerLink="/profile" ><span class="glyphicon glyphicon-arrow-left"></span></button>
   		</div>
   		<div class="col-md-11">
-  			<h3 style="text-align: center">Your Drive to <span id="target-dest"></span></h3>
+  			<h3 style="text-align: center">Your Drive to <span id="target-dest">Miami</span></h3>
   		</div>
   	</div>
   
@@ -15,8 +15,8 @@
   		<div class="col-md-4 panel panel-default">
   			<h4><span id="target-seat"></span> Seats Filled</h4>
   			<ol class="list-group panel-body">
-  				<li><div class="list-group-item"><a routerLinkActive="active" routerLink="/accepted-rider"><img src="avi.png">Passenger Name</a></div></li>
-  				<li><div class="list-group-item"><a routerLinkActive="active" routerLink="/accepted-rider"><img src="avi.png">Passenger Name</a></div></li>
+  				<li><div class="list-group-item"><a routerLinkActive="active" routerLink="/accepted-rider"><img src="avi.png">Robert Collati</a></div></li>
+  				<li><div class="list-group-item"><a routerLinkActive="active" routerLink="/accepted-rider"><img src="avi.png">Dylan Baltar</a></div></li>
   				<li><div class="list-group-item">AVAILABLE</div></li>
   				
   			</ol>
@@ -27,7 +27,7 @@
   			<ol class="list-group panel-body">
   				<li>
   					<div class="list-group-item" id="pass1" ng-show="this.isVisible">
-  						<a routerLinkActive="active" routerLink="/rider-profile"><img src="avi.png">Passenger Name</a>
+  						<a routerLinkActive="active" routerLink="/rider-profile"><img src="avi.png">Hector Lombard</a>
   						<div class="buttons">
   							<button class="btn btn-success">Add</button>
   							<button class="btn btn-danger" ng-click="ShowHide()">Deny</button>
@@ -36,7 +36,7 @@
   				</li>
   				<li>
   					<div class="list-group-item" id="pass2">
-  						<a routerLinkActive="active" routerLink="/rider-profile"><img src="avi.png">Passenger Name</a>
+  						<a routerLinkActive="active" routerLink="/rider-profile"><img src="avi.png">Natalie Geleroff</a>
   						<div class="buttons">
   							<button class="btn btn-success">Add</button>
   							<button class="btn btn-danger">Deny</button>
@@ -55,8 +55,8 @@
   		<div class="col-md-4 panel panel-default">
         <div class="panel-body">
     			<h3>Trip Details</h3>
-    			<p>Date: <span id="target-date"></span></p>
-    			<p>Time: <span id="target-time"></span></p>
+    			<p>Date: <span id="target-date">03/13/2019</span></p>
+    			<p>Time: <span id="target-time">1:00PM</span></p>
     			<p>Price: $20</p>
         </div>
   		</div>
