@@ -20,7 +20,8 @@ export class TripPageComponent implements OnInit {
   	if(sessionDrive){
   		document.getElementById("target-date").innerHTML = sessionDrive.ride_date;
   		document.getElementById("target-dest").innerHTML = sessionDrive.dest_city;
-  		document.getElementById("target-seat").innerHTML = "2/"+sessionDrive.seats;		
+      document.getElementById("target-seat").innerHTML = "2/"+sessionDrive.seats;		
+      document.getElementById("target-time").innerHTML = sessionDrive.time;
   	}
   	else{
   		console.log("no session storage found");
