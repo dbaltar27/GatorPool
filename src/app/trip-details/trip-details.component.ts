@@ -27,6 +27,13 @@ export class TripDetailsComponent implements OnInit {
       $('#time').text(details.trip_time);
       $('#price').text(details.trip_price);
 
+      $('button.rsvp').click(function(this){
+        console.log('click');
+        var details = JSON.parse(sessionStorage.getItem('details'));
+  
+        sessionStorage.setItem("rsvp", JSON.stringify(details));
+      });
+
     });
   }
 
