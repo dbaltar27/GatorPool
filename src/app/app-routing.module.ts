@@ -3,10 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ProfileComponent } from './profile/profile.component';
-<<<<<<< HEAD
 import { RatingFormComponent } from './rating-form/rating-form.component'
 import { DetailsPageComponent } from './details-page/details-page.component';
-=======
 import { RiderProfileComponent } from './rider-profile/rider-profile.component';
 import { TripPageComponent } from './trip-page/trip-page.component';
 import { RiderProfileAcceptedComponent } from './rider-profile-accepted/rider-profile-accepted.component';
@@ -20,15 +18,12 @@ import { NoMatchingTripsComponent } from './no-matching-trips/no-matching-trips.
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { TripMatchComponent } from './trip-match/trip-match.component';
 import { SignupComponent } from './signup/signup.component';
->>>>>>> 991fef59b1a9316cd83ed5862defbfa9f7efcb12
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
-<<<<<<< HEAD
   { path: 'rating', component: RatingFormComponent },
-  { path: 'details', component: DetailsPageComponent }
-=======
+  { path: 'details', component: DetailsPageComponent },
   { path: 'rider-profile', component: RiderProfileComponent},
   { path: 'trip-page', component: TripPageComponent},
   { path: 'accepted-rider', component: RiderProfileAcceptedComponent},
@@ -41,7 +36,6 @@ const routes: Routes = [
   { path: 'trip-match', component: TripMatchComponent },
   { path: 'trip-details', component: TripDetailsComponent },
   { path: 'no-matching-trips', component: NoMatchingTripsComponent },
->>>>>>> 991fef59b1a9316cd83ed5862defbfa9f7efcb12
 ]
 
 @NgModule({
