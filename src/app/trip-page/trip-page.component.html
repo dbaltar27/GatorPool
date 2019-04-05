@@ -4,7 +4,7 @@
   			<button class="back btn" routerLinkActive="active" routerLink="/profile" ><span class="glyphicon glyphicon-arrow-left"></span></button>
   		</div>
   		<div class="col-md-11">
-  			<h3 style="text-align: center">Your Drive to (CITY)</h3>
+  			<h3 style="text-align: center">Your Drive to {{place}}</h3>
   		</div>
   	</div>
   
@@ -13,7 +13,7 @@
   	<div class="row">
   		<div class="col-md-1"></div>
   		<div class="col-md-4 panel panel-default">
-  			<h4>2/3 Seats Filled</h4>
+  			<h4>{{seats}} Seats Filled</h4>
   			<ol class="list-group panel-body">
   				<li><div class="list-group-item"><a routerLinkActive="active" routerLink="/accepted-rider"><img src="avi.png">Passenger Name</a></div></li>
   				<li><div class="list-group-item"><a routerLinkActive="active" routerLink="/accepted-rider"><img src="avi.png">Passenger Name</a></div></li>
@@ -55,9 +55,9 @@
   		<div class="col-md-4 panel panel-default">
         <div class="panel-body">
     			<h3>Trip Details</h3>
-    			<p>Date: MM/DD/YYYY</p>
-    			<p>Time: HH:MM</p>
-    			<p>Price: $$</p>
+    			<p>Date: {{time}}</p>
+    			<p>Time: 8:00 AM</p>
+    			<p>Price: $20</p>
         </div>
   		</div>
   		<div class="col-md-3"></div>

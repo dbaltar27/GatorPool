@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripPageComponent implements OnInit {
 
+  place = sessionStorage.getItem("drive-city");
+  time = sessionStorage.getItem("drive-date");
+  seats = sessionStorage.getItem("drive-seats");
   constructor() { }
-
+  
   ngOnInit() {
+   
   }
 
 }

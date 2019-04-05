@@ -1,11 +1,11 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1>Name</h1>
+    <h1>{{uesr_name}}</h1>
     <div class="col-md-4">    
     <ul class="list-group">
-      <li class="list-group-item">Safe Driver</li>
-      <li class="list-group-item">Comfortable Car</li>
-      <li class="list-group-item">Good Conversation</li>
+      <li class="list-group-item">Safe Driver  <span class="glyphicon glyphicon-ok"></span></li>
+      <li class="list-group-item">Comfortable Car <span class="glyphicon glyphicon-ok"></span></li>
+      <li class="list-group-item">Good Conversation <span class="glyphicon glyphicon-ok"></span></li>
   </ul>  
   </div>
   </div>
@@ -33,24 +33,24 @@
                 </tr>
                 <tr>
                   <td>March 13, 2019</td>
-                  <td>Gainesville</td>
+                  <td >Gainesville</td>
                   <td>Miami</td>
                   <td>2/4</td>
-                  <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page">View</button></td>
+                  <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page" (click)="onClickMe('Miami', 'March 13, 2019', '2/4')">View</button></td>
                 </tr>
                 <tr>
                     <td>March 19, 2019</td>
                     <td>Gainesville</td>
                     <td>Atlanta</td>
                     <td>4/4</td>
-                    <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page">View</button></td>
+                    <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page" (click)="onClickMe('Atlanta', 'March 19, 2019', '4/4')">View</button></td>
                 </tr>
                 <tr>
                     <td>March 29, 2019</td>
                     <td>Gainesville</td>
                     <td>Tampa</td>
                     <td>1/4</td>
-                    <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page">View</button></td>
+                    <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page" (click)="onClickMe('Tampa', 'March 29, 2019', '1/4')">View</button></td>
                 </tr>
                 </table>
             </div>
@@ -73,7 +73,7 @@
                 <td>November 11, 2019</td>
                 <td>Orlando</td>
                 <td>Gainesville</td>
-                <td><button class="btn btn-default" routerLinkActive="active" routerLink="/view-drivers">View Drivers</button></td>
+                <td><button class="btn btn-default" routerLinkActive="active" routerLink="/view-drivers" (click)="onClickMe('Tampa', 'March 29, 2019', '1/4')">View Drivers</button></td>
                 <td><span class="text-warning">In Progress <span class="glyphicon glyphicon-time"></span></span></td>
               </tr>
               <tr>
@@ -137,32 +137,28 @@
               <div class="table-responsive" class="history-table">
                   <table class="table">
                   <tr>
-                      <td>Driving Ability:
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>  
+                      <td>Driving Ability:</td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <mat-slider min="1" max="5" disabled  step="0.5" value="4"></mat-slider>
                     </td>
                   </tr>
                   <tr>
-                      <td>Friendliness:
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>  
-                    </td>
+                      <td>Friendliness:</td>
                   </tr>
                   <tr>
-                      <td>Reliability:
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>  
+                      <td>
+                        <mat-slider min="1" max="5" disabled  step="0.5" value="4.5"></mat-slider>
                     </td>
-                  </tr>
+                    <tr>
+                        <td>Reliability:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <mat-slider min="1" max="5" disabled  step="0.5" value="4"></mat-slider>
+                      </td>
+                    </tr>
                   </table>
                 </div>
            
