@@ -43,7 +43,7 @@ export class TripFormComponent implements OnInit {
 		sessionStorage.setItem("ride", JSON.stringify(ride));
 	}
 
-	onClickRide(city: string, state: string, date: string){
+	/* onClickRide(city: string, state: string, date: string){
 		var ride = {
 			dest_city: city,
 			dest_state: state,
@@ -52,7 +52,7 @@ export class TripFormComponent implements OnInit {
 
 
 		sessionStorage.setItem("ride", JSON.stringify(ride));
-	}
+	} */
 
 	
 
