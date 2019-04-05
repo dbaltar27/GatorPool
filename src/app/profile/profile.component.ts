@@ -43,6 +43,10 @@ export class ProfileComponent implements OnInit {
 
 
   	
+    //this.data.currentMessage.subscribe(message => this.message = message)
+
+    $('#profile-name').text(sessionStorage.getItem("full-name"));
+
   }
 
 }

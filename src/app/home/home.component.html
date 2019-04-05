@@ -5,7 +5,11 @@
     <div class="page-header">
         <h1 class="text-center">GatorPool</h1>
     </div>
-      <div class="col-md-3 col-md-offset-3">
+    <div id="alert" class="alert alert-warning alert-dismissible center-block" role="alert">
+      <button id="close-alert" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      User not found, please <a routerLinkActive="active" routerLink="/signup" class="alert-link">create an account</a>
+    </div>
+      <div class="col-sm-3 col-sm-offset-3">
           <a href="#myModal2" data-toggle="modal" data-target="#myModal2"><div class="panel panel-default ">
               <div class="panel-body home-panel text-center">
                 <h2 class="top">Create Account</h2>
@@ -13,7 +17,7 @@
               </div>
           </div></a>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
           <a href="#myModal" data-toggle="modal" data-target="#myModal"><div class="panel panel-default ">
               <div class="panel-body home-panel text-center">
                 <h2 class="top">Sign In</h2>
@@ -48,7 +52,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <a routerLinkActive="active" routerLink="/profile" role="button" type="button" data-dismiss="modal" class="btn btn-primary">Login</a>
+          <button id="sign-up" type="button" data-dismiss="modal" class="btn btn-primary">Login</button>
+          <!-- <a routerLinkActive="active" routerLink="/profile" role="button" type="button" data-dismiss="modal" class="btn btn-primary">Login</a> -->
         </div>
       </div>
     </div>
@@ -84,3 +89,5 @@
         </div>
       </div>
     </div>
+
+    
