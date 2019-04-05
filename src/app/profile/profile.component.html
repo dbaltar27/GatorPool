@@ -23,7 +23,7 @@
           <div id="home" class="tab-pane fade in active">
             <div>
             <div class="table-responsive" class="ride-table">
-              <table class="table">
+              <table id="driving-table" class="table">
                 <tr>
                   <th>Date</th>
                   <th>Departure</th>
@@ -32,21 +32,21 @@
                   <th></th>
                 </tr>
                 <tr>
-                  <td>March 13, 2019</td>
-                  <td >Gainesville</td>
-                  <td>Miami</td>
-                  <td>2/4</td>
-                  <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page" (click)="onClickMe('Miami', 'March 13, 2019', '2/4')">View</button></td>
+                  <td id="target-date">03/13/2019</td>
+                  <td>Gainesville</td>
+                  <td id="target-dest">Miami</td>
+                  <td id="target-seat">2/4</td>
+                  <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page">View</button></td>
                 </tr>
                 <tr>
-                    <td>March 19, 2019</td>
+                    <td>03/19/2019</td>
                     <td>Gainesville</td>
                     <td>Atlanta</td>
                     <td>4/4</td>
                     <td><button class="btn btn-default" routerLinkActive="active" routerLink="/trip-page" (click)="onClickMe('Atlanta', 'March 19, 2019', '4/4')">View</button></td>
                 </tr>
                 <tr>
-                    <td>March 29, 2019</td>
+                    <td>03/29/2019</td>
                     <td>Gainesville</td>
                     <td>Tampa</td>
                     <td>1/4</td>
@@ -166,3 +166,6 @@
         </div>
 </div>
       
+<div #tester>
+
+</div>
