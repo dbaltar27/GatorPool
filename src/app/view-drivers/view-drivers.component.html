@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-10">
       <h3 style="text-align: center">Potential Trips</h3>
-      <h4 style="text-align: center">on 3/20/2019 from Gainesville to Orlando<br><br></h4>
+      <h4 style="text-align: center">on <span id='date'>11/11/2019</span> from Gainesville to <span id='city'>Orlando</span><br><br></h4>
       <!-- <h4>RSVP sent to:</h4> -->
     </div>
     <div class="col-md-1"></div>
@@ -31,11 +31,12 @@
           <th></th>
         </tr>
         <tr class="bg-warning">
-          <td>3:00 PM</td>
-          <td>Lebron James</td>
+          <td id='rsvp_time'>3:00 PM</td>
+          <td id='rsvp_name'>Lebron James</td>
           <td>Pending</td>
           <td><button class="btn" routerLinkActive="active" routerLink="/view-post">View Post</button></td>
         </tr>
+        <!--
         <tr class="bg-danger">
           <td>3:00 PM</td>
           <td>Michael Jordan</td>
@@ -54,6 +55,7 @@
           <td>Pending</td>
           <td><button class="btn" routerLinkActive="active" routerLink="/view-post">View Post</button></td>
         </tr>
+      -->
      </table>
     </div>
   </div>

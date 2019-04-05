@@ -46,6 +46,22 @@ export class ProfileComponent implements OnInit {
     //this.data.currentMessage.subscribe(message => this.message = message)
 
     $('#profile-name').text(sessionStorage.getItem("full-name"));
+    
+    var ride_data = JSON.parse(sessionStorage.getItem("ride"));
+
+    console.log(ride_data);
+
+    if (ride_data) {
+
+      $('#target_ride_date').text(ride_data.ride_date);
+
+      $('#target_ride_city').text(ride_data.dest_city);
+
+    }
+
+    
+    
+
 
   }
 
