@@ -3,14 +3,14 @@
   			<button class="back btn" routerLinkActive="active" routerLink="/profile" ><span class="glyphicon glyphicon-arrow-left"></span></button>
   		</div>
     <div class="page-header">
-      <h1>Your Trip to <b>Tampa</b> on <b>January 7, 2019</b></h1>      
+      <h1>Your Trip to <b>{{city}}</b> on <b>{{date}}</b></h1>      
     </div>
   
     <div class="page-header">
       <h2>Time: 9:30 AM</h2>
       <h2>Price: $20.00</h2>
     </div>
-    <h2>Driver</h2>
+    <h2>John Smith</h2>
     <ul>
       <li>Driving: 
          <mat-slider min="1" max="5" disabled  step="0.5" value="4"></mat-slider>
@@ -26,7 +26,7 @@
       </li>
     </ul> 
   
-    <h2>Rider 1</h2>
+    <h2>Tobias Burton</h2>
     <ul>
       <li>Politeness:
           <mat-slider min="1" max="5" disabled  step="0.5" value="4"></mat-slider>
@@ -39,7 +39,7 @@
         </li>
     </ul> 
   
-    <h2>Rider 2</h2>
+    <h2>Ben Sutton</h2>
     <ul>
       <li>Politeness:
           <mat-slider min="1" max="5" disabled  step="0.5" value="4"></mat-slider>

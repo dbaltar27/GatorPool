@@ -9,6 +9,8 @@ export class DetailsPageComponent implements OnInit {
 
   constructor() { }
 
+  city = sessionStorage.getItem("drive-city");
+  date = sessionStorage.getItem("drive-date");
   ngOnInit() {
   }
 
