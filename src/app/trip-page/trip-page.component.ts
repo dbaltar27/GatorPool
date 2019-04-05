@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripPageComponent implements OnInit {
 
+  public isVisible = false;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  ShowHide(){
+    this.isVisible = true;
+  }
+
+
 
 }

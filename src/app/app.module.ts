@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RatingFormComponent } from './rating-form/rating-form.component';
-import { DetailsPageComponent } from './details-page/details-page.component';
 import { RiderProfileComponent } from './rider-profile/rider-profile.component';
 import { TripPageComponent } from './trip-page/trip-page.component';
 import { RiderProfileAcceptedComponent } from './rider-profile-accepted/rider-profile-accepted.component';
@@ -20,14 +18,14 @@ import { SignupComponent } from './signup/signup.component';
 import { NoMatchingTripsComponent } from './no-matching-trips/no-matching-trips.component';
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { TripMatchComponent } from './trip-match/trip-match.component';
+import { RatingFormComponent } from './rating-form/rating-form.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     NavbarComponent,
-    RatingFormComponent,
-    DetailsPageComponent,
     RiderProfileComponent,
     TripPageComponent,
     RiderProfileAcceptedComponent,
@@ -40,7 +38,9 @@ import { TripMatchComponent } from './trip-match/trip-match.component';
     SignupComponent,
     NoMatchingTripsComponent,
     TripDetailsComponent,
-    TripMatchComponent
+    TripMatchComponent,
+    RatingFormComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
