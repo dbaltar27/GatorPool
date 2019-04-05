@@ -11,3 +11,7 @@
   li {
     font-size:20px;
   }
+
+  button.btn-warning {
+    margin-bottom: 20px;
+  }
