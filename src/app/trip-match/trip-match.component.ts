@@ -60,6 +60,22 @@ export class TripMatchComponent implements OnInit {
      
     });
 
+    $('button.rsvp').click(function(this){
+      //var idClicked = e.target.id;
+      //console.log('hello');
+      var name = $(this).closest('tr').find('td.name')[0].textContent;
+      var time = $(this).closest('tr').find('td.time')[0].textContent;
+      var price = $(this).closest('tr').find('td.price')[0].textContent;
+
+      //console.log('Name: ', name);
+      //console.log('Time: ', time);
+      //console.log('Price: ', price);
+      var rsvp = {trip_name: name, trip_time: time, trip_price: price}
+      //console.log(trip_details);
+
+      sessionStorage.setItem("rsvp", JSON.stringify(rsvp));
+    });
+
     
 
 
