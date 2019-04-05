@@ -12,7 +12,7 @@ export class ProfileComponent implements OnInit {
 		
     console.log(city);
 
-    sessionStorage.setItem("drive-city", city);
+   /*  sessionStorage.setItem("drive-city", city);
     sessionStorage.setItem("drive-date", date);
     sessionStorage.setItem("drive-seats", seats);
 
@@ -20,7 +20,7 @@ export class ProfileComponent implements OnInit {
     sessionStorage.setItem("rider1", "Adam Mckay");
     sessionStorage.setItem("rider2", "Albert Gator");
     sessionStorage.setItem("date", "March 13, 2019");
-    console.log(sessionStorage.getItem("drive-city"));
+    console.log(sessionStorage.getItem("drive-city")); */
 	}
 
   constructor() { }
